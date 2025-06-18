@@ -54,9 +54,9 @@ Un IDE de tu preferencia, IntelliJ Idea recomendado.
 
 🛠️ Instalación
 
-Clona este repositorio: -> git clone https://github.com/rioacosta/S3.01--Patterns-2
+Clona este repositorio: -> git clone https://github.com/rioacosta/S3.02--Patterns-2
 
-cd S3.01--Patterns-2
+cd S3.02--Patterns-2
 
 
 
@@ -76,4 +76,4 @@ Ejecuta el programa en tu IDE preferido.
 
 Las contribuciones son bienvenidas! Por favor, sigue los siguientes pasos para contribuir:
 
-Has un fork del repositorio Crea una nueva rama git checkout -b feature/*NovaFuncionalitat has tus cambios y commiteja'*ls: git commit -m 'Añade Nueva Funcionalidad' Sube los cambios a tu rama: git push origin feature/*NovaFuncionalitat has un pull request About S3.01--Patterns-2
+Has un fork del repositorio Crea una nueva rama git checkout -b feature/*NovaFuncionalitat has tus cambios y commiteja'*ls: git commit -m 'Añade Nueva Funcionalidad' Sube los cambios a tu rama: git push origin feature/*NovaFuncionalitat has un pull request About S3.02--Patterns-2
