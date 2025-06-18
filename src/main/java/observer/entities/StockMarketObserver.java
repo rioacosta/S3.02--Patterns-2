@@ -11,12 +11,12 @@ public class StockMarketObserver implements StockObserver {
 
     @Override
     public void subscribe(StockListener agency) {
-        System.out.println("Este agencia ahora es un cliente");
+        System.out.println("La agencia "+ agency.getName()+ " ahora es un cliente");
         listeners.add(agency);
     }
     @Override
     public void unsubscribe(StockListener agency) {
-        System.out.println("Este agency ya no contrata nuestros servicios");
+        System.out.println("La agencia " +agency.getName()+ " ya no contrata nuestros servicios");
         listeners.remove(agency);
     }
     @Override

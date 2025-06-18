@@ -11,12 +11,12 @@ public class PayPalPayment implements PaymentMethod {
     }
     @Override
     public void pay(double amount, PaymentCallBack callback) {
-        if (email.contains("@") && payPalApprove()) {
-            callback.paymentSuccessful();
+        if (email.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$") && payPalApprove()) {
             System.out.println("Cuenta validada");
+            callback.paymentSuccessful();
         } else {
             callback.paymentUnsuccessful();
-            System.out.println("Cuenta PayPal inválida");
+            System.out.println("Cuenta PayPal invalida");
         }
     }
     private boolean payPalApprove() {

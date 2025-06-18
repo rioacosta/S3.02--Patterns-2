@@ -14,13 +14,11 @@ public class TheShoeStore {
 
             @Override
             public void paymentSuccessful() {
-
-                System.out.println("¡Pago realizado con éxito! Gracias por su compra.");
+                System.out.println("*Pago realizado con exito! Gracias por su compra.");
             }
 
             @Override
             public void paymentUnsuccessful() {
-
                 System.out.println("Error en el pago");
             }
         });

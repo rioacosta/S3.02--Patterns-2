@@ -9,6 +9,10 @@ public class StockAgency implements StockListener {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override
     public void update(String event) {
         System.out.println("Mensaje recibido en la agencia: " + this.name +": "+ event);

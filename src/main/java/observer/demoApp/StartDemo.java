@@ -13,11 +13,12 @@ public class StartDemo {
      stockObserver.subscribe(agency3);
      stockObserver.subscribe(agency2);
      stockObserver.subscribe(agency1);
+     System.out.println();
 
      stockObserver.stockEvent("Bajada de un mercado determinado");
-
+     System.out.println();
      stockObserver.unsubscribe(agency3);
-
+     System.out.println();
      stockObserver.stockEvent("Subida de un mercado determinado");
  }
 

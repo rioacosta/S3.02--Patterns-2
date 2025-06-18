@@ -13,10 +13,11 @@ public class CreditCardPayment implements PaymentMethod {
     @Override
     public void pay(double amount, PaymentCallBack callback) {
         if (cardNumber.length() == 16) {
+            System.out.println("Pago con tarjeta autorizado");
             callback.paymentSuccessful();
         } else {
             callback.paymentUnsuccessful();
-            System.out.println("Tarjeta inválida");
+            System.out.println("Tarjeta invalida");
         }
     }
 }
