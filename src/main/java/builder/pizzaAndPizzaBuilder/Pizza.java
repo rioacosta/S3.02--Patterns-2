@@ -6,13 +6,9 @@ import java.util.List;
 public class Pizza {
         String size;
         String dough;
-        List<String> toppings;
+        List<String> toppings = new ArrayList<>();
 
-        public Pizza (String size, String dough, List<String> toppings) {
-                this.dough = dough;
-                this.size = size;
-                this.toppings = toppings;
-        }
+        public Pizza () {        }
 
         public void setSize(String size) {
                 this.size = size;
@@ -23,8 +19,7 @@ public class Pizza {
         }
 
         public void setToppings(List<String> newtoppings) {
-                this.toppings = new ArrayList<>(this.toppings);
-                this.toppings.addAll(newtoppings);
+                this.toppings = new ArrayList<>(newtoppings);
         }
 
         @Override

@@ -6,33 +6,31 @@ import builder.pizzaAndPizzaBuilder.PizzaBuilder;
 import java.util.List;
 
 public class PizzaMenuBuilder implements PizzaBuilder {
-    private Pizza pizza = new Pizza("Mediana", "Clasica", (List.of("Salsa", "Queso")));
+    private Pizza pizza;
 
-    public PizzaMenuBuilder() {
-        reset();
+
+    @Override
+    public PizzaBuilder reset() {
+       pizza = new Pizza();
+        return this;
     }
 
     @Override
-    public void reset() {
-        this.pizza = new Pizza("Mediana", "Clasica", (List.of("Salsa", "Queso")));
-    }
-
-    @Override
-    public String pickSize(String size) {
+    public PizzaBuilder pickSize(String size) {
         pizza.setSize(size);
-        return size;
+        return this;
     }
 
     @Override
-    public String doughType(String dough) {
+    public PizzaBuilder doughType(String dough) {
         pizza.setDough(dough);
-        return dough;
+        return this;
     }
 
     @Override
-    public List<String> addToppings(List<String> toppings) {
+    public PizzaBuilder addToppings(List<String> toppings) {
         pizza.setToppings(toppings);
-        return toppings;
+        return this;
     }
 
     @Override
